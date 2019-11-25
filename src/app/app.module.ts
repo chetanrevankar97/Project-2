@@ -12,6 +12,7 @@ import { ViewpostsComponent } from './viewposts/viewposts.component';
 import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
+import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { UserHomeComponent } from './user-home/user-home.component';
     ViewpostsComponent,
     UsersAppliedComponent,
     UserprofileComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    AdminPaymentComponent
   ],
   imports: [
     BrowserModule,
