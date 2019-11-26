@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule
+
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

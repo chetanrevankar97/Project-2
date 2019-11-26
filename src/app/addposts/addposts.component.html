@@ -1,6 +1,6 @@
 <div>
         <div class="jumbotron jumbotron-fluid bg-dark">
-          
+
                 <div class="jumbotron-background">
                   <img src="https://forepoint.co.uk/wp-content/uploads/2018/01/DXC-cover.jpg" class="blur ">
                 </div>
@@ -21,7 +21,10 @@
             <li class="nav-item active">
               <a class="nav-link" id="btn" routerLink="/viewposts"style="color: white;font-size: 25px;margin-left: 50px">View Post</a>
             </li>
-            
+            <li class="nav-item active">
+              <a class="nav-link" id="btn" routerLink="/adminPayment"style="color: white;font-size: 25px;margin-left: 50px">Payment</a>
+            </li>
+
           </ul>
         </div>
       </nav>
@@ -38,7 +41,7 @@
                     <input type="text" id="name1"  placeholder="Enter Project name"><br>
                 </div>
             </div><br>
-    
+
             <div class="row">
                 <div class="col-6" style="text-align: right">
                     <label>*Description:</label></div>
@@ -57,10 +60,10 @@
                     <input type="checkbox" name="vehicle3" value="Boat">.NET<br>
                     <input type="checkbox" name="vehicle2" value="Car">ANGULAR<br>
                     <input type="checkbox" name="vehicle3" value="Boat">REACT<br>
-    
+
                 </div>
             </div><br>
-    
+
             <div class="row">
                 <div class="col-6" style="text-align: right">
                     <label>*Price for Freelancer:</label></div>
@@ -68,7 +71,7 @@
                     <input type="number"  id="age" placeholder="Enter price"><br>
                 </div>
             </div><br>
-    
+
             <div class="row">
                 <div class="col-6" style="text-align: right">
                     <label>Credits to be earned:</label></div>
@@ -76,24 +79,24 @@
                             <input type="number" id="age" placeholder="Enter Credits"><br>
                         </div>
             </div><br>
-    
-           
-    
+
+
+
             <!-- Button trigger modal -->
             <button type="submit"class="btn btn" data-toggle="modal" data-target="#exampleModalLong" style="background-color: yellow;color: black;">
                 <strong>
                     Submit
                 </strong>
             </button>
-            
-            
-    
-            
+
+
+
+
             <br><br>
-    
+
         </div>
-    
-    
+
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -103,20 +106,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-    
+
     </body>
-    
+
   <!-- Footer -->
   <br>
   <footer class="page-footer font-small blue">
-  
+
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3" style="background-color: black;color: white;border-radius: 10px;">
             <a href="https://www.dxc.technology/about_us" target="_blank" style="color: white;">About Us </a><br>
             <a href="https://www.dxc.technology/contact_us" target="_blank" style="color: white;">Contact Us </a>
           </div>
           <!-- Copyright -->
-        
+
         </footer>
         <!-- Footer -->
 </div>
@@ -135,7 +138,7 @@ aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         </div>
         <div class="modal-body">
             <h5>Post created successfully</h5>
-            
+
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn" style="background-color: yellow;color: black;" data-dismiss="modal" routerLink="/addposts"><strong> Ok</strong></button>
