@@ -25,7 +25,7 @@ import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
     UsersAppliedComponent,
     UserprofileComponent,
     UserHomeComponent,
-    AdminPaymentComponent
+    AdminPaymentComponent,
   ],
   imports: [
     BrowserModule,
