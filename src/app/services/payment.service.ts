@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as Web3 from 'web3';
 import * as TruffleContract from 'truffle-contract';
+import { resolve } from 'url';
 
 declare let require: any;
 declare let window: any;
@@ -27,4 +28,9 @@ export class PaymentService {
     window.web3 = new Web3(this.web3Provider);
 
   }
+  accountCreation(username, password) {
+
+    window.web3.personal.newAccount(username + password);
+  }
+
 }

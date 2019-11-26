@@ -55,9 +55,14 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
+declare let require: any;
+declare let window: any;
+declare let global:any;
+//import 'cstm-polyfill.ts';
+//import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
-
+global.Buffer = global.Buffer || require('buffer').Buffer;
+(window as any).global = window;
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
