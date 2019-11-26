@@ -13,6 +13,7 @@ import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

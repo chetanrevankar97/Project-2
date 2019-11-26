@@ -5,7 +5,7 @@ import { resolve } from 'url';
 
 declare let require: any;
 declare let window: any;
-
+declare let global: any;
 const tokenAbi = require('../../../Blockchain-artifacts/build/contracts/payment.json');
 
 @Injectable({
@@ -30,7 +30,23 @@ export class PaymentService {
   }
   accountCreation(username, password) {
 
-    window.web3.personal.newAccount(username + password);
+    const createdAddress = window.web3.personal.newAccount(username + password);
+    console.log(createdAddress);
+    return createdAddress;
+
   }
 
+  checkBalance(address) {
+    console.log('balance:' + window.web3.eth.getBalance(address));
+  }
+
+  makePayment(fromAddress, toAddress, amount) {
+
+    window.web3.eth.sendTransaction({
+      from: fromAddress,
+      to: toAddress,
+      value: amount
+    });
+    console.log('Payment Done');
+  }
 }
