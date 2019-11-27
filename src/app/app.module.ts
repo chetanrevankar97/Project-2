@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {HttpClientModule} from '@angular/common/http';
+
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +18,7 @@ import { ViewpostsComponent } from './viewposts/viewposts.component';
 import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
+
 import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
 import { UserAppliedPostComponent } from './user-applied-post/user-applied-post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,15 +33,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ViewpostsComponent,
     UsersAppliedComponent,
     UserprofileComponent,
+
     UserHomeComponent,
     AdminPaymentComponent,
     UserAppliedPostComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+
+    HttpClientModule
+
     ReactiveFormsModule,BrowserAnimationsModule
+
 
   ],
   providers: [],

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Candidates, HttpserviceService, Posts } from '../httpservice.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { delay } from 'q';
 
 @Component({
   selector: 'app-users-applied',
@@ -6,10 +9,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users-applied.component.css']
 })
 export class UsersAppliedComponent implements OnInit {
-
-  constructor() { }
+  candidates:Candidates[]
+  posts1:Posts
+  id:string
+  constructor(private httpclient:HttpserviceService,private route:ActivatedRoute,private router:Router) { }
 
   ngOnInit() {
+    this.id=this.route.snapshot.paramMap.get("postid")
+    this.httpclient.getPosts1(this.id).subscribe(response=>{
+      this.posts1=response;
+      console.log(this.posts1)
+      this.candidates=this.posts1.appliedCandidates
+    })
+    // setTimeout(()=>{},1000)
+    // setTimeout(()=>{},1000)
+    
   }
 
-}
+  profile(candidateid){
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate(["userprofile/"+this.id+"/"+candidateid]);
+  });
+  }
+    
+    
+  }
+
+
