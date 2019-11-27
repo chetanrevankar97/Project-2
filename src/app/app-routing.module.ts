@@ -26,7 +26,8 @@ const routes: Routes = [
   { path: 'usersApplied', component: UsersAppliedComponent },
   { path: 'userprofile', component: UserprofileComponent },
   { path: 'userHome', component: UserHomeComponent },
-  { path: 'adminPayment', component: AdminPaymentComponent }
+  { path: 'adminPayment', component: AdminPaymentComponent },
+  {path:'userAppliedPost',component:UserAppliedPostComponent}
 
 ];
 
