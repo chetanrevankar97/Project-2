@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpserviceService, Posts } from '../httpservice.service';
 
 @Component({
   selector: 'app-addposts',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addposts.component.css']
 })
 export class AddpostsComponent implements OnInit {
-
-  constructor() { }
+  post:Posts
+  projectname:string
+  description:string
+  price:string
+  credits:string
+  constructor(private httpClient:HttpserviceService) { }
 
   ngOnInit() {
+    
   }
+
+create(){
+  this.post=new Posts(this.projectname,this.description,this.price,this.credits,[],[])
+  this.httpClient.createPosts(this.post).subscribe(response=>{alert("Posted Successfully")})
+}
 
 }
