@@ -8,20 +8,19 @@ import { ViewpostsComponent } from './viewposts/viewposts.component';
 import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
+import { UserAppliedPostComponent } from './user-applied-post/user-applied-post.component';
 
 
 const routes: Routes = [
-  {
-    path:"",component:LoginComponent
-
-  },
+  {path:"",component:LoginComponent},
   {path:"register",component:RegisterComponent},
   {path:"adminhome",component:AdminhomeComponent},
   {path:"addposts",component:AddpostsComponent},
   {path:"viewposts",component:ViewpostsComponent},
   {path:"usersApplied",component:UsersAppliedComponent},
   {path:"userprofile",component:UserprofileComponent},
-  {path:"userHome",component:UserHomeComponent}
+  {path:"userHome",component:UserHomeComponent},
+  {path:"userAppliedPost",component:UserAppliedPostComponent}
 
   
 ];
