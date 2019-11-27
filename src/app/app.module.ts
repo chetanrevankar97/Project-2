@@ -15,11 +15,8 @@ import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
-<<<<<<< HEAD
 import { UserAppliedPostComponent } from './user-applied-post/user-applied-post.component';
-=======
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
->>>>>>> d5348468f896c0da3875589ad226cb4c383e7470
 
 @NgModule({
   declarations: [
@@ -39,9 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
-
-    BrowserAnimationsModule
+    ReactiveFormsModule,BrowserAnimationsModule
 
   ],
   providers: [],
