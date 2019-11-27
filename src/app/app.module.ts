@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+
 import {HttpClientModule} from '@angular/common/http';
+
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +19,10 @@ import { UsersAppliedComponent } from './users-applied/users-applied.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 
+import { AdminPaymentComponent } from './admin-payment/admin-payment.component';
+import { UserAppliedPostComponent } from './user-applied-post/user-applied-post.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,13 +33,22 @@ import { UserHomeComponent } from './user-home/user-home.component';
     ViewpostsComponent,
     UsersAppliedComponent,
     UserprofileComponent,
-    UserHomeComponent
+
+    UserHomeComponent,
+    AdminPaymentComponent,
+    UserAppliedPostComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+
     HttpClientModule
+
+    ReactiveFormsModule,BrowserAnimationsModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
